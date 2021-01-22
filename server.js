@@ -32,6 +32,9 @@ server.on('error', function (err) {
 
 var hexColorRegExp = /^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/;
 var typeRegExp = /^(top|bottom|right)$/;
+//// change these two variables to the following form, because the message format of dplayer has changed.  ////
+var hexColorRegExp = /^\d{8}$/;
+var typeRegExp = /^(0|1|2)$/;
 var msgMinInterval = 500;
 var lastMsgTimestamps = {};
 
